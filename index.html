@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library App</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Welcome to the library!</h1>
+    </header>
+    <main class="main">
+        <button class="btn btn-green btn-large" id="modalBtn">Add a book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </main>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <h2>Enter book info</h2>
+            <label for="title">Title: </label>
+            <input class="input" type="text" name="title" id="bookTitle" placeholder="title">
+            <label for="author">Author: </label>
+            <input class="input" type="text" name="author" id="bookAuthor" placeholder="author">
+            <label for="pages">Number of pages: </label>
+            <input class="input" type="text" name="pages" id="pages" placeholder="pages">
+            <label for="isRead">Read the book?</label>
+            <input type="checkbox" name="isRead" id="isRead">
+            <button id="addBookBtn">Add book</button>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

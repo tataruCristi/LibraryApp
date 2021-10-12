@@ -1,0 +1,139 @@
+
+  
+:root {
+  --body: #f1f3f8;
+  --font: #393b44;
+  --border: #666;
+  --header: #d6e0f0;
+  --title-font: #282a33;
+  --book-card: #e0e2e7;
+  --btn-green: #abf79c;
+  --btn-green-hover: #9ae68b;
+  --btn-green-active: #89d57a;
+  --btn-red: #da9797;
+  --btn-red-hover: #c98686;
+  --btn-red-active: #b87575;
+  --btn-light-green: #d3ffcd;
+  --btn-light-green-hover: #c2eebc;
+  --btn-light-green-active: #b1ddab;
+  --btn-light-red: #ffe8e8;
+  --btn-light-red-hover: #eed7d7;
+  --btn-light-red-active: #ddc6c6;
+  --modal: #d6e0f0;
+  --modal-border: #282a33;
+}
+  
+  .header {
+    max-width: 1400px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .main {
+    max-width: 1400px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--book-card);
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .btn-red {
+    background-color: var(--btn-red);
+  }
+
+  .btn-light-green {
+    background-color: var(--btn-light-green);
+  }
+
+  .btn-light-red {
+    background-color: var(--btn-light-red);
+  }
+
+  .modal-bg {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s;
+  }
+  .bg-active {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .modal {
+      position: relative;
+      width: 40%;
+      height: 55%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid var(--modal-border);
+      border-radius: 10px;
+      background-color: var(--modal);
+  }
+
+  .modal button {
+      padding: 10px 30px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+  }
+
+  .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: black;
+      cursor: pointer;
+  }
+
+  #isRead {
+    width: 25px;
+    height: 25px;
+    margin-top: 13px;
+  }
+
+  .input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    font-weight: bold;
+  }
